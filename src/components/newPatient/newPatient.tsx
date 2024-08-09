@@ -36,7 +36,6 @@ const NewPatient = ({
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    console.log('handle submit');
     e.preventDefault();
     if (!uploadedImage) {
       console.error('Please upload an image');
@@ -52,7 +51,6 @@ const NewPatient = ({
       let newPatients: PatientInterface[] = patients.map((patient) => {
         if (patient.id === patientData.id) {
           patientExists = true;
-          console.log(patientExists);
           return newPatient;
         } else {
           return patient;

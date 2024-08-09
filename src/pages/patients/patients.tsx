@@ -32,8 +32,6 @@ const Patient = () => {
       website: '',
       id: Number(patients[patients.length - 1].id) + 1,
     });
-    console.log(patients);
-    console.log(patientData.id);
     setDisplayModal(true);
   };
 
