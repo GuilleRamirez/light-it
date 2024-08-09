@@ -1,0 +1,54 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  gap: 12px;
+}
+.imageWrapper {
+  width: 30%;
+  max-width: 250px;
+  max-height: 250px;
+  aspect-ratio: 1/1;
+  img {
+    max-width: 100%;
+  }
+}
+.patientContentWrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.textInput {
+  input,
+  textArea {
+    width: 100%;
+    height: 46px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    background-color: #b3b3b3;
+    font-size: 16px;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    text-align: center; /* Center the placeholder text */
+  }
+  textArea {
+    height: 140px;
+  }
+}
+.button {
+  height: 32px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  background-color: #b3b3b3;
+  font-size: 12px;
+  width: 20%;
+}
+.formButtonWrapper {
+  display: flex;
+  gap: 40%;
+  padding-left: 9%;
+}
